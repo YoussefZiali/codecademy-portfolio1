@@ -15,6 +15,24 @@ document.addEventListener('DOMContentLoaded', function() {
       themeIcon.classList.toggle('bx-sun');
 
     });
+    const scroll = ScrollReveal({
+        distance: '40px',
+        duration: 2500,
+        reset: true
+    });
+    scroll.reveal('.logo',{delay:100, origin: 'left'});
+    scroll.reveal('.menu_button',{delay:100, origin: 'right'});
+    scroll.reveal('.theme_button',{delay:100, origin: 'right'});
+    scroll.reveal('.home-text h1',{delay:450, origin: 'bottom'});
+    scroll.reveal('.home-text span',{delay:500, origin: 'left'});
+    scroll.reveal('.home-text p',{delay:500, origin: 'left'});
+    scroll.reveal('.cv-button',{delay:550, origin: 'bottom'});
+    scroll.reveal('.home-image',{delay:500, origin: 'right'});
+    scroll.reveal('.share p',{delay:300, origin: 'left'});
+    scroll.reveal('.social',{delay:100, origin: 'left'});
+    scroll.reveal('.Skills',{delay:120, origin: 'left'});
+
+
     navLink.forEach(navLink => {
       // Add click event listener to each nav-link
       navLink.addEventListener('click', () => {
@@ -23,22 +41,6 @@ document.addEventListener('DOMContentLoaded', function() {
           menuIcon.classList.toggle('bx-menuy');
       });
   });
-    const scroll = ScrollReveal({
-        distance: '40px',
-        duration: 2500,
-        reset: true
-    });
-    scroll.reveal('.logo',{delay:200, origin: 'left'});
-   // scroll.reveal('.nav-list',{delay:250, origin: 'top'});
-    scroll.reveal('.menu_button',{delay:300, origin: 'right'});
-    scroll.reveal('.home-text h1',{delay:450, origin: 'bottom'});
-    scroll.reveal('.home-text span',{delay:5000, origin: 'left'});
-    scroll.reveal('.home-text p',{delay:500, origin: 'left'});
-    scroll.reveal('.cv-button',{delay:550, origin: 'bottom'});
-    scroll.reveal('.home-image',{delay:500, origin: 'right'});
-    scroll.reveal('.share p',{delay:600, origin: 'left'});
-    scroll.reveal('.social',{delay:600, origin: 'left'});
-    scroll.reveal('.Skills',{delay:600, origin: 'left'});
 
   });
   
