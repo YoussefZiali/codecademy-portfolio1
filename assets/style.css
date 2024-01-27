@@ -51,6 +51,8 @@ header{
     padding: 32px 15%;
     background: transparent;
     transition: all ease .45s;
+    background: var(--background-dark-color);
+
 }
 /* logo */
 .logo{
@@ -121,11 +123,13 @@ header{
 .home-image{
     width: 500px;
     height:500px;
+    clip-path: circle(50%);
 }
 .home-image img{
     width: 100%;
     height: 100%;
     object-fit: contain;
+  
 }
 .home-text span{
     padding: 5px 25px;
@@ -294,7 +298,9 @@ footer i {
         --p-font: 1rem;
         transition: .2s;
     }
-    
+    .home-image{
+        clip-path: circle(45%);
+    }
 
 }
 @media (max-width: 1020px) {
@@ -305,6 +311,7 @@ footer i {
     :root{
         --big-font:3.5rem;
     }
+
 }
 @media (max-width: 950px) {
 
